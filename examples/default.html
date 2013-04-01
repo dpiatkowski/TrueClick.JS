@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>TrueClick.JS Samples</title>
+		<meta name="author" content="WhiteShore" />
+	</head>
+	<body>
+		<div>
+			<header>
+				<h1>TrueClick.JS Example</h1>
+			</header>
+
+			<div class="content">
+				<a href="#" class="clickable">Click me!</a>
+				<a href="#" class="clickable_single">Click me to see single event!</a>
+			</div>
+
+			<footer>
+				<p>
+					WhiteShore 2013
+				</p>
+			</footer>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="../src/trueclick.jquery.js"></script>
+		<script>
+            $(function() {
+                $('.clickable').trueClick({
+                    leftClick : function() {
+                        console.log('LEFT');
+                    },
+                    middleClick : function() {
+                        console.log('MIDDLE');
+                    },
+                    rightClick : function() {
+                        console.log('RIGHT');
+                    }
+                }).on('click', function() {
+                    console.log('chaining on "click" event still works!')
+                });
+
+                $('.clickable_single').trueClick({
+                    leftClick : function() {
+                        console.log('Clicked!');
+                    }
+                });
+            });
+		</script>
+	</body>
+</html>
