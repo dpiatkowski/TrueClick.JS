@@ -28,7 +28,7 @@ Plugin has been tested in following browsers:
 
 The MIT License
 
-Copyright (c) 2008 Tom Preston-Werner
+Copyright (c) 2013 Damian Piątkowski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
 documentation files (the 'Software'), to deal in the Software without restriction, including without limitation 
